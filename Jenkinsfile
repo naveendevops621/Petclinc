@@ -6,7 +6,7 @@ node {
 
     stage('Checkout Git'){
         sh 'echo "Welcome to jenkins"'
-        git changelog: false, credentialsId: 'github_creds', poll: false, url: 'https://github.com/gkdevops/PetClinic.git'
+        git changelog: false, credentialsId: 'f76d053f-64a7-47e7-9994-1dff302be13d', poll: false, url: 'https://github.com/naveendevops621/Petclinc.git'
     }
     
     stage('Read Maven POM'){

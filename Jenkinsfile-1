@@ -6,7 +6,7 @@ node{
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '30', numToKeepStr: '')), disableConcurrentBuilds(), disableResume(), [$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/gkdevops/PetClinic.git/'], pipelineTriggers([githubPush()])])
     
     stage('Code Checkout'){
-        git credentialsId: 'github-creds', url: 'https://github.com/gkdevops/PetClinic.git'
+        git credentialsId: 'f76d053f-64a7-47e7-9994-1dff302be13d', url: 'https://github.com/naveendevops621/Petclinc.git'
     }
     
     stage('Code Quality'){
